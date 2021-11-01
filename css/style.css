@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+body {
+    height: auto;
+    margin: 0;
+    top: 0;
+    font-family: 'Roboto Condensed', Helvetica;
+    font-size: 1.2em;
+
+    
+    /* background-image: url('https://vignette.wikia.nocookie.net/heyarnold/images/5/50/Wiki-background/revision/latest?cb=20170419044450'); */
+    background-color: #FFFFFF;
+ }
+
+/* NAV BAR */
+header {
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:center;
+    
+ }
+#logo{
+    width:45vh;
+    border: rgb(170, 0, 0) solid 5px; 
+    border-style: ridge;
+ }
+
+
+.nav_links {
+    padding: 1em;
+    line-height: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+ 
+}
+.nav_links a{
+    padding: 1em;
+    color: rgb(255, 69, 0);
+    text-decoration: solid;
+    
+}
+
+.nav_links a:focus{
+    color: darkgreen;
+
+}
+.nav_links :hover, .nav_links a:hover{
+    transition-property:all; 
+    transition-duration: 750ms;
+    color: rgb(255, 255, 255);
+}
+
+
+
+a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+
+  a.skip:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+}
+
+footer {
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    color: #FFFFFF;
+    line-height: 2em;
+}
+
+footer img{
+    padding: 5px;
+    width:20vh;
+    border: rgb(0, 170, 99) dotted 5px; 
+    border-style: ridge;
+
+}
+
+.foot_links {
+    padding: 5px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  
+    
+
+
+
+}
+
+
+
+/* INDEX  */
+.container h1 {
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+.container p {
+    text-align: center;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    line-height: 4vh;
+}
+.container h2 {
+    text-align: center;
+}
+
+
+.family {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.family img{
+    border: 10px solid rgba(255, 69, 0, .56);
+
+    height: 50vh;
+    margin: 10px;
+    width: auto;
+}
+
+.caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+}
+
+
+.button {
+    border: 2px #ccc solid;
+    display: inline-block;
+    margin:0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333;
+    transition: background 500ms ease-in;
+}
+
+.button:hover{
+    background: cornflowerblue;
+}
+
+
+/* .family */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* AMENITIES ONLYY BELOW */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ROOMS CSS TABLE */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+p {
+    text-align: center;
+}
+
+table {
+    height: 40%;
+    left: 10%;
+    margin: 20px auto;
+    overflow-y: scroll;
+    position: static;
+    width: 50%;
+}
+
+thead th {
+    background: #1378af;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+tr {
+    background: #f4f7f8;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 5px;
+}
+
+th, td {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 20px;
+    text-align: left;
+    width: 33.3333%;
+} */
+
+
+/* LOCATION CSS */
+
+ #h1location {
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:flex-start;
+ }
+
+ .gallery img {
+    border: 10px solid #333;
+    margin: 10px;
+    height: 50vh;
+    width: 50vh;
+} 
