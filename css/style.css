@@ -14,21 +14,26 @@ body {
     background-color: #FFFFFF;
  }
 
-/* NAV BAR */
+/* button generator and special entities  */
+/* still need to fix my css and my classes but for now it will be ok for the mobile check in */
+/* NAV BAR  HEADER*/
 header {
-    background-color: rgb(27, 27, 27);
+    background-color: #333;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
-    align-items:center;
-    
- }
-#logo{
-    width:45vh;
-    border: rgb(170, 0, 0) solid 5px; 
-    border-style: ridge;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 2em;
+    padding: 1em;
  }
 
+#logo {
+    width:45vh;
+    border: rgb(170, 0, 0) solid 8px; 
+    border-style: ridge;
+    margin-top: 5px;
+    align-items: center;  
+ }
 
 .nav_links {
     padding: 1em;
@@ -36,25 +41,37 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-around;
- 
+    justify-content:space-evenly;
 }
 .nav_links a{
     padding: 1em;
-    color: rgb(255, 69, 0);
-    text-decoration: solid;
-    
+    color: rgb(247, 247, 247);
 }
 
-.nav_links a:focus{
-    color: darkgreen;
-
-}
-.nav_links :hover, .nav_links a:hover{
+/* .nav_links a:hover{ 
     transition-property:all; 
-    transition-duration: 750ms;
+    transition-duration: 500ms;
     color: rgb(255, 255, 255);
-}
+} */
+
+
+li.link.current a{
+    background-color: rgba(255, 0, 0, 0.87);
+    color:rgb(255, 255, 255);
+    border: 1px solid white;
+    text-transform: uppercase;
+    padding: 3px;
+    font-weight: 300;
+}  
+
+/* li.link a:hover {
+    background-color: rgba(27, 145, 4, 0.849);
+    color:rgb(255, 255, 255); */
+    /* text-transform:uppercase;  */
+    /* border: 1px solid white;
+    padding: 3px;
+    font-weight: 300;
+}    */
 
 
 
@@ -67,14 +84,16 @@ a.skip{
     -webkit-transition: top 1s ease-out;
     transition: top 1s ease-out;
     z-index: 1;
-  }
+  } 
 
-  a.skip:focus{
+a.skip:focus {
     top:20px;
     color: black;
     text-decoration-style: solid;
 }
 
+
+/* FOOTER  */
 footer {
     background-color: #333;
     display: flex;
@@ -98,22 +117,28 @@ footer img{
     padding: 5px;
     flex-direction: column;
     flex-wrap: wrap;
-  
-    
-
-
-
 }
+
+
+/* footwe address house emoji \1F3E0
+    footer email emoji 	\2709
+    phone emoji \260E
+*/
+
+
+
+/* MAIN IN ALL GAVE CLASS OF CONTAINER */
 
 
 
 /* INDEX  */
 .container h1 {
     text-align: center;
-    padding-top: 2vh;
-    padding-bottom: 1vh;
+    /* padding-top: 2vh;
+    padding-bottom: 1vh; */
     font-size: 5vh;
     font-weight: bold;
+    padding: 2vh 2vh 1vh 2vh;
 }
 
 .container p {
@@ -121,10 +146,31 @@ footer img{
     padding-left: 2vh;
     padding-right: 2vh;
     line-height: 4vh;
+    /* padding: 2vh 2vh 1vh 2vh; */
 }
 .container h2 {
     text-align: center;
+    /* padding-top: 2vh;
+    padding-bottom: 1vh; */
+    font-size: 5vh;
+    padding: 2vh 2vh 1vh 2vh;
 }
+
+
+
+li#eat ::before{
+    content: "\1F374";
+}
+li#bath ::after{
+    content: \1F6BD;
+
+}
+
+
+    /* section p:nth-child(2):before{
+    content: \1F6BD;
+} */
+
 
 
 .family {
@@ -136,8 +182,7 @@ footer img{
 }
 
 .family img{
-    border: 10px solid rgba(255, 69, 0, .56);
-
+    border: 10px solid rgba(255, 69, 0, .80);
     height: 50vh;
     margin: 10px;
     width: auto;
@@ -152,6 +197,7 @@ footer img{
 
 
 .button {
+    text-align: center;
     border: 2px #ccc solid;
     display: inline-block;
     margin:0 0;
@@ -175,28 +221,21 @@ footer img{
 
 
 
-
-
-
-
-
-
-
-
 /* AMENITIES ONLYY BELOW */
 
+.rules {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
 
 
+}
 
 
-
-
-
-
-
-
-
-
+.basics {
+    display: grid;
+    justify-content: center;
+}
 
 
 /* ROOMS CSS TABLE */
@@ -241,7 +280,20 @@ th, td {
     padding: 20px;
     text-align: left;
     width: 33.3333%;
-} */
+} 
+
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+
+
 
 
 /* LOCATION CSS */
@@ -268,4 +320,6 @@ h2{
     margin: 10px;
     height: 50vh;
     width: 50vh;
+    box-shadow: #1378af 2px;
 } 
+
