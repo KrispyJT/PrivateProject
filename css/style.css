@@ -40,7 +40,14 @@ a.skip {
     z-index: 1;
 }
 
-a.skip:focus, a.skip:active {
+a.skip:focus {
+    top: 20px;
+    color: black;
+    text-decoration-style: solid;
+
+}
+
+a.skip:active {
     top: 20px;
     color: black;
     text-decoration-style: solid;
@@ -460,7 +467,7 @@ input[type=submit]:hover {
 
 
 input :required {
-    border-color: rgb(255, 0, 0) !important;
+    border-color: rgb(255, 0, 0);
 
 }
 
