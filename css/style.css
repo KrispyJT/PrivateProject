@@ -373,6 +373,8 @@ footer img {
 }
 
 
+
+
 .form {
     background: rgb(201, 204, 204);
     display: grid;
@@ -448,19 +450,18 @@ input[type=submit]:hover {
 }
 
 
-
 input :required {
     border-color: rgb(255, 0, 0) !important;
 
 }
 
 input:required+label {
-    color: rgb(0, 0, 0);
+    color: rgb(15, 15, 15);
 }
 
 
-#vega {
-    width: 45%;
+.vega {
+    width: 100%;
     margin-bottom: 1em;
     box-shadow: var(--shadow);
     animation: vega;
@@ -484,7 +485,7 @@ input:required+label {
 
 
 @media screen and (prefers-reduced-motion: reduce) {
-    #vega {
+    .vega {
         animation: none
     }
 }
@@ -503,9 +504,13 @@ input:required+label {
         border: thick double #ffffff;
     }
 
-    .intro img {
-        width: 70%;
+    .intro {
+        grid-template-columns: .5fr .5fr;
+        align-content: space-around;
+        align-items: center;
+        grid-gap: 1rem;
     }
+
 
     .about {
         text-align: center;
@@ -532,9 +537,10 @@ input:required+label {
         justify-content: safe;
     }
 
-    #vega {
-        width: 20%
+    .form {
+        width: 75%;
     }
+
 
 
 
@@ -544,12 +550,9 @@ input:required+label {
 
 @media screen and (min-width: 800px) {
 
-    .intro {
-        grid-template-columns: .5fr .5fr;
-        align-content: space-around;
-        align-items: center;
-        grid-gap: 1rem;
 
+    .intro img {
+        width: 50%;
     }
 
     .container h1 {
@@ -585,15 +588,6 @@ input:required+label {
         margin: auto
     }
 
-
-    .boxes {
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-row-start: 1;
-        grid-row-end: 4;
-
-    }
-
-
     .portfolio {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 10px;
@@ -612,15 +606,11 @@ input:required+label {
 
 
     .form {
-        /* grid-template-columns: 1fr 1fr; */
-
+        grid-template-columns: .5fr;
+        justify-content: center;
+        width: 80%;
         margin: 0 auto;
 
     }
-
-    #vega {
-        width: 20%;
-    }
-
 
 }
