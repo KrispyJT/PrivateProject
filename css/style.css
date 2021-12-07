@@ -164,8 +164,9 @@ footer img {
 
 .start {
     background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
     padding: 1rem;
     box-shadow: var(--shadow);
     text-align: center;
@@ -233,6 +234,14 @@ footer img {
     grid-template-columns: 1fr;
     border: 5px solid var(--dark);
     box-shadow: var(--shadow);
+}
+
+.parallax {
+    background: url('/images/parallax.jpg');
+    background-size: cover; /* paralex effect */
+    background-repeat: no-repeat; /* paralex effect */
+    background-attachment: fixed; /* paralex effect */
+    min-height: 200px;
 }
 
 
@@ -487,6 +496,16 @@ input:required+label {
 @media screen and (prefers-reduced-motion: reduce) {
     .vega {
         animation: none
+    }
+
+    .parallax {
+        scroll-behavior: auto;
+    }
+
+
+/* turn of parallax */
+    .parallax {
+        background-attachment: initial;
     }
 }
 
