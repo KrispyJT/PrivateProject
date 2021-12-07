@@ -237,7 +237,7 @@ footer img {
 }
 
 .parallax {
-    background: url('/images/parallax.jpg');
+    background-image: url('../images/parallax.jpg');
     background-size: cover; /* paralex effect */
     background-repeat: no-repeat; /* paralex effect */
     background-attachment: fixed; /* paralex effect */
