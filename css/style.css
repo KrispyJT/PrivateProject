@@ -12,6 +12,8 @@ html {
     overflow-y: scroll;
 }
 
+
+
 body {
     height: auto;
     margin: 0;
@@ -23,6 +25,8 @@ body {
 }
 
 
+
+/* controls the parallax image on web page rooms */
 .parallax {
     background-image: url('../images/parallax.jpg');
     background-size:cover; /* paralex effect */
@@ -30,7 +34,6 @@ body {
     background-attachment:local; /* paralex effect */
     background-attachment: fixed;
     min-height: 250px;
-
 }
 
 
@@ -65,6 +68,7 @@ a.skip:active {
     text-decoration-style: solid;
 }
 
+
 .nav_links {
     line-height: 2em;
     display: flex;
@@ -73,13 +77,13 @@ a.skip:active {
     justify-content: space-evenly;
 }
 
+
 .nav_links ul {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-
-
 }
+
 
 .nav_links a {
     background: var(--primary);
@@ -95,13 +99,14 @@ a.skip:active {
     margin: 7px;
 }
 
+
 .nav_links a:hover {
     background: var(--third);
     color: var(--dark);
     font-weight: bolder;
 }
 
-
+/* current link */
 a.active {
     background: var(--secondary);
     text-transform: uppercase;
@@ -232,7 +237,7 @@ footer img {
     text-decoration: none;
     border: 0;
     text-align: center;
-    /* margin-top: 10px; */
+
     border-radius: 30px;
     display: inline-block;
     border: 3px #ccc solid;
@@ -301,38 +306,6 @@ footer img {
     align-items: center;
 }
 
-.gallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.gallery img {
-    border: 10px solid var(--second);
-    margin: 10px;
-    height: 50vh;
-    width: 50vh;
-    border-radius: 25px;
-}
-
-
-
-.button {
-    text-align: center;
-    border: 2px #ccc solid;
-    display: inline-block;
-    margin: 0 0;
-    border-radius: 50px;
-    text-decoration: none;
-    color: #333;
-    transition: background 500ms ease-in;
-}
-
-.button:hover {
-    background: cornflowerblue;
-}
 
 .boxes {
     display: grid;
@@ -358,7 +331,7 @@ footer img {
 }
 
 
-
+/* TABLE  */
 .table {
     height: 40%;
     left: 10%;
@@ -394,7 +367,7 @@ footer img {
 }
 
 
-
+/* FORM  */
 
 .form {
     background: rgb(201, 204, 204);
@@ -480,7 +453,7 @@ input:required+label {
     color: rgb(15, 15, 15);
 }
 
-
+/* ANIMATION FOR INDEX.HTML */
 .vega {
     width: 100%;
     margin-bottom: 1em;
@@ -491,6 +464,8 @@ input:required+label {
 }
 
 
+
+/* FLIP CARD */
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
@@ -541,7 +516,9 @@ input:required+label {
     transform: rotateY(180deg);
 }
 
-
+.flip-card:hover:focus, .flip-card-inner:focus{
+    transform: rotateY(180deg);
+}
 
 
 
@@ -589,6 +566,7 @@ input:required+label {
 
     .nav_links a {
         border: thick double #ffffff;
+        border-radius: 10px;
     }
 
     .intro {
