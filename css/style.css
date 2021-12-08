@@ -552,6 +552,11 @@ input:required+label {
         background-attachment: initial;
     }
 
+    .flip-card, .flip-card-inner {
+        transform: none;
+        transition: none;
+    }
+
 }
 
 
