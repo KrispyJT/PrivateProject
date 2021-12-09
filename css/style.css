@@ -504,14 +504,14 @@ input:required+label {
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
     padding: 5px;
-    background-color: rgb(108, 211, 202);
+    background-color: rgba(175, 240, 234, .5);
     color: rgb(0, 0, 0);
   }
   
   /* Style the back side */
   .flip-card-back {
     padding: 5px;
-    background-color: dodgerblue;
+    background-color: rgba(57, 111, 192);
     color: white;
     transform: rotateY(180deg);
 }
