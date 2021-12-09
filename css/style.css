@@ -639,8 +639,8 @@ input:required+label {
 
     .nav_links {
         flex-direction: row;
-        justify-content: space-around;
-        align-items: baseline;
+        justify-content: right;
+        align-items: flex-end;
     }
 
     .nav_links a {
@@ -681,6 +681,10 @@ input:required+label {
         width: 80%;
         margin: 0 auto;
 
+    }
+
+    footer {
+        justify-content: center;
     }
 
 }
