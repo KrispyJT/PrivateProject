@@ -566,7 +566,7 @@ input:required+label {
     .nav_links {
         flex-direction: row;
         align-items: flex-start;
-        justify-content: safe;
+        /* justify-content: safe; */
     }
 
     .nav_links a {
@@ -592,7 +592,7 @@ input:required+label {
     }
 
     .portfolio {
-        grid-template-columns: .5fr .5fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .portfolio img {
@@ -604,7 +604,7 @@ input:required+label {
 
     .boxes {
         grid-template-columns: .5fr .5fr;
-        justify-content: safe;
+        /* justify-content: safe; */
     }
 
     .form {
